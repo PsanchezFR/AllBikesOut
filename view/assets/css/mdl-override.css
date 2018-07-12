@@ -1,0 +1,13 @@
+.mdl-textfield__input {
+  border-bottom: 1px solid silver;
+  color: silver; }
+
+.mdl-textfield__label {
+  color: silver; }
+
+.mdl-grid {
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+
+/*# sourceMappingURL=mdl-override.css.map */
