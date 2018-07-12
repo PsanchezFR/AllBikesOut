@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title> Simplon LMS </title>
+	<title> All bikes out </title>
     <!--main style-->
     <link rel="stylesheet" href="/view/assets/css/style.css">
     <!--bootstrap-->
