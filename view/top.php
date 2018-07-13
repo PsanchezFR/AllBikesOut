@@ -19,4 +19,4 @@
     <link rel="stylesheet" href="/view/assets/css/mdl-override.css">
 <head>
     <body>
-        <div class="container-fluid row justify-content-center m-2">
+        <div class="container-fluid m-auto">
