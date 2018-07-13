@@ -7,16 +7,18 @@
 	    $requested_url = "/";
     }
 
+
     //REQUIRING TOOLS
 	require 'config/routes.php';
 	require 'tools/logger.php';
+    //CREATING TOOLS REFERENCES
+    $logger = new Logger();
+
+    //CREATING DB CONNECTION
 	require 'config/pdo.php';
 
 	//REQUIRING MODELS
     require 'model/User.php';
-
-    //CREATING TOOLS REFERENCES
-	$logger = new Logger();
 
 	//IF USER LOGGED, SAVE INFORMATIONS IN SESSION
     $USER = NULL;
