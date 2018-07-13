@@ -11,6 +11,5 @@ namespace model;
 
 class defaillance
 {
-    public $id_defaillance;
     public $nom_defaillance;
 }
