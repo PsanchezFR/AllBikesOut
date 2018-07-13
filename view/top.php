@@ -18,5 +18,5 @@
     <!--material design lite override-->
     <link rel="stylesheet" href="/view/assets/css/mdl-override.css">
 <head>
-    <body>
-        <div class="container-fluid m-auto">
+    <body class="h-100">
+        <div class="container-fluid m-auto my-0 h-100">
