@@ -16,7 +16,9 @@
         $velos = $request->fetchAll(PDO::FETCH_CLASS, 'model\velo');
 
         foreach ($velos as $key => $value){
-            echo "<a href='/show/$value->id_velo' class='border col-auto d-flex align-items-center' style='min-height: 40px'>";
+            $veloRef = 'velo' . $key;
+            echo "<form action='show' method='post' class='col-auto'>";
+            echo "<button class='d-flex align-items-center btn btn-outline-secondary border-left-0 border w-100' name='$veloRef' type='submit' value='$value->id_velo'  style='min-height: 40px' >";
             echo "<i class='fas fa-bicycle col-2 fa-2x'></i>";
             echo "<p class='m-0 col-6'>$value->id_velo</p>";
             echo "<div class='col-3'>";
@@ -27,7 +29,8 @@
             echo "<i class='far fa-star'></i>";
             echo "</div>";
             echo "<i class='fas fa-chevron-right col-1 fa-2x'></i>";
-            echo "</a>";
+            echo "</button >";
+            echo "</form>";
         }
 
         $_SESSION['velo_id'] = $value->id_velo;
