@@ -4,6 +4,7 @@
 	<title> All bikes out </title>
     <!--main style-->
     <link rel="stylesheet" href="/view/assets/css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,6 +17,8 @@
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <!--material design lite override-->
     <link rel="stylesheet" href="/view/assets/css/mdl-override.css">
+    <!--splashscreen design-->
+    <link rel="stylesheet" href="../splashscreen/splashscreen.css"/>
 <head>
     <body class="h-100">
         <div class="container-fluid m-auto my-0 h-100">

@@ -1,0 +1,23 @@
+div#splashAll {
+    background: #31333d;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+section#splashCube {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: white;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-size: 0px;
+    background-position: center center;
+    transform: translateX(0) translateY(0) rotate(-90deg);
+}
