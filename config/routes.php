@@ -8,10 +8,10 @@
     //
     //  APP VIEW
     //
-        '/broken' => 'pages/broken.php',
-        '/lost' => 'pages/lost.php',
-        '/search' => 'pages/search.php',
-        '/show' => 'pages/show.php',
+        '/broken' => 'controller/pages/broken.php',
+        '/lost' => 'controller/pages/lost.php',
+        '/search' => 'controller/pages/search.php',
+        '/show' => 'controller/pages/show.php',
 	];
 
 ?>
