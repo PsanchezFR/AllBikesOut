@@ -1,13 +1,16 @@
 <?php
+if(isset($_POST['velo'])){
+    $_SESSION['velo'] = $_POST['velo'];
+}
 
+if(!isset($_SESSION['defaillances'])){
+    $request = $bdd -> prepare("SELECT defaillance.nom_defaillance FROM ve_to_de INNER JOIN defaillance ON ve_to_de.id_defaillance = defaillance.id_defaillance WHERE ve_to_de.id_velo = :velo");
+    $request -> bindParam ('velo', $_SESSION['velo']);
+    $request -> execute();
+    $defaillances = $request->fetchAll(PDO::FETCH_CLASS, 'model\defaillance');
+    $_SESSION['defaillances'] = $defaillances;
+}
 
-
-$request = $bdd -> prepare('SELECT def.nom_defaillance FROM defaillance as def
-                            INNER JOIN ve_to_de as vtd ON ve_to_de.id_velo = velo.id_velo
-                            INNER JOIN def ON def.id_defaillance = vtd.id_defaillance
-                            WHERE id_velo = :velo
-                            ');
-$request -> bindParam ('velo', $_POST['velo']);
-$request -> execute();
-
+$_SESSION['velo'];
+$_SESSION['defaillances'];
 ?>

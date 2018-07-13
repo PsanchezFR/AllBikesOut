@@ -32,8 +32,6 @@
             echo "</button >";
             echo "</form>";
         }
-
-        $_SESSION['velo_id'] = $value->id_velo;
     }
            ?>
 </div>
