@@ -19,6 +19,9 @@
 
 	//REQUIRING MODELS
     require 'model/User.php';
+    require 'model/velo.php';
+    require 'model/defaillance.php';
+    require 'model/ve_to_de.php';
 
 	//IF USER LOGGED, SAVE INFORMATIONS IN SESSION
     $USER = NULL;
