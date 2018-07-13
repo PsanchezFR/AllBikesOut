@@ -18,7 +18,7 @@
         foreach ($velos as $key => $value){
             $veloRef = 'velo' . $key;
             echo "<form action='show' method='post' class='col-auto'>";
-            echo "<button class='d-flex align-items-center btn btn-outline-secondary border-left-0 border w-100' name='$veloRef' type='submit' value='$value->id_velo'  style='min-height: 40px' >";
+            echo "<button class='d-flex align-items-center btn btn-outline-secondary border-left-0 border w-100' name='velo' type='submit' value='$value->id_velo'  style='min-height: 40px' >";
             echo "<i class='fas fa-bicycle col-2 fa-2x'></i>";
             echo "<p class='m-0 col-6'>$value->id_velo</p>";
             echo "<div class='col-3'>";
